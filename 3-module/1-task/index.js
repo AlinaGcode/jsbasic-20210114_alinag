@@ -1,7 +1,10 @@
 /**
- * @param   {{ name: string, age: number }[]} users
- * @returns {string[]}  объект
- */
+* @param   {{ name: string, age: number }[]} users
+* @returns {string[]}  объект
+*/
 function namify(users) {
-  // ваш код...
-}
+  let mappedNames = users.map((user) => {
+    return user.name;
+  });
+  return mappedNames;
+};

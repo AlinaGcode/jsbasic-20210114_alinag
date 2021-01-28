@@ -1,9 +1,12 @@
 /**
- * @param {number[]} arr
- * @param {number} a
- * @param {number} b
- * @returns {number[]}
- */
+* @param {number[]} arr
+* @param {number} a
+* @param {number} b
+* @returns {number[]}
+*/
 function filterRange(arr, a, b) {
-  // ваш код...
+  let filterredArr = arr.filter((item) => {
+    return a <= item && item <= b;
+  });
+  return filterredArr;
 }
