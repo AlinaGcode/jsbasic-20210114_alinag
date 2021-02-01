@@ -5,4 +5,11 @@
 */
 function getMinMax(str) {
     
+    let regEx = / /gi;
+    let newStr = str.replace(regEx, ",").split(",").map(Number).filter((item) => {return !isNaN(item)});
+    
+    let result = {};
+    result.min = Math.min(...newStr);
+    result.max = Math.max(...newStr);
+    return result;
 }
